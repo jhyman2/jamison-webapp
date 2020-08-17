@@ -20,13 +20,13 @@ EXPRESS_PORT=8080
 ```
 2) Open 1 terminal and run the following
 ```js
-cd packages/server
+cd server
 npm install
 npm start
 ```
 3) Open second terminal
 ```js
-cd packages/client
+cd client
 npm install
 npm start
 ```
