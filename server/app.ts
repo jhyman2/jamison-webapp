@@ -9,17 +9,6 @@ class MyApp {
   async start() {
     const app = express();
 
-    app.get('/sample-route', (_req: any, res: any) => {
-      res.send(JSON.stringify({
-        myAppName: process.env.APP_NAME,
-        theTime: new Date(),
-        ports: {
-          express: process.env.EXPRESS_PORT,
-          apollo: process.env.APOLLO_PORT,
-        },
-      }));
-    });
-
     app.get('/express-endpoint', (_req: any, res: any) => {
       res.send(JSON.stringify({
         apolloPort: process.env.APOLLO_PORT,
