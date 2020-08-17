@@ -3,7 +3,7 @@ import express from 'express';
 import path from 'path';
 import GraphQLServer from './graphql';
 
-dotenv.config({ path: path.resolve('../../.env') });
+dotenv.config({ path: path.resolve('../.env') });
 
 class MyApp {
   async start() {
